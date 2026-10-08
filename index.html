@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>午夜像素工坊 · Godot 独立游戏作品集</title>
+<meta name="description" content="一个人的 Godot 4.7 游戏产线：昼夜循环猎魔 Demo、暗黑地牢、银河恶魔城、开源背包组件。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=ZCOOL+QingKe+HuangYou&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:title" content="午夜像素工坊 · Godot 独立游戏作品集">
+<meta property="og:description" content="20 天 6 个 Godot 4.7 项目：昼夜双循环猎魔 Demo、数据驱动技能试炼场、暗黑地牢与像素系统组件。">
+<meta property="og:image" content="assets/shot_hunter_boss.png">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#top">
+    <span class="brand-mark">MP</span>
+    <span class="brand-text">午夜像素工坊<em>MIDNIGHT PIXEL WORKS</em></span>
+  </a>
+  <nav class="nav">
+    <a href="#works">作品</a>
+    <a href="#arsenal">工程军火库</a>
+    <a href="#timeline">产线时间轴</a>
+    <a href="#about">关于</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-sky">
+      <div class="moon"></div>
+      <div class="stars"></div>
+    </div>
+    <div class="hero-layer hero-far" data-depth="0.02"></div>
+    <div class="hero-layer hero-near" data-depth="0.06"></div>
+    <div class="hero-content">
+      <p class="eyebrow">ONE DEV · GODOT 4.7 · 20 DAYS · 6 PROJECTS</p>
+      <h1>午夜像素工坊</h1>
+      <p class="hero-sub">白天摆摊卖零件，夜晚提刀猎魔王。<br>这是一个开发者把六台游戏机焊在一起的全部家当。</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#works">进入作品柜</a>
+        <a class="btn btn-ghost" href="#arsenal">翻工程军火库</a>
+      </div>
+    </div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="hero-hint" aria-hidden="true">&#9660;</div>
+  </section>
+
+  <section class="ticker">
+    <div class="ticker-track" aria-hidden="true">
+      <span>PARTS DEMON SLAYER</span><span>·</span><span>DIABLO LIKE</span><span>·</span><span>SKILL TEST ARENA</span><span>·</span>·</span><span>LETTER MERGE</span><span>·</span>·</span><span>SYNTH CITY</span><span>·</span><span>BAG PART HOTBAR</span><span>·</span>
+      <span>PARTS DEMON SLAYER</span><span>·</span><span>DIABLO LIKE</span><span>·</span><span>SKILL TEST ARENA</span><span>·</span>·</span><span>LETTER MERGE</span><span>·</span>·</span><span>SYNTH CITY</span><span>·</span><span>BAG PART HOTBAR</span><span>·</span>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><b data-count="6">0</b><span>在库项目</span></div>
+    <div class="stat"><b data-count="113">0</b><span>GDScript 文件</span></div>
+    <div class="stat"><b data-count="77">0</b><span>场景</span></div>
+    <div class="stat"><b data-count="20">0</b><span>天工期</span></div>
+    <div class="stat"><b data-count="0">0</b><span>已知恶性 Bug</span></div>
+  </section>
+
+  <section id="works" class="works">
+    <div class="section-head">
+      <h2>作品柜</h2>
+      <p>每张卡都是一个真实跑在 Godot 4.7 里的工程，点开看细节。</p>
+    </div>
+    <div class="chips" id="filters">
+      <button class="chip active" data-filter="all">全部</button>
+      <button class="chip" data-filter="action">动作 / RPG</button>
+      <button class="chip" data-filter="casual">休闲 / 街机</button>
+      <button class="chip" data-filter="system">系统组件</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="spotlight">
+    <div class="spot-text">
+      <p class="eyebrow">FLAGSHIP · 已完成验收</p>
+      <h2>零件猎魔人</h2>
+      <p class="spot-sub">小镇夜间打工实录</p>
+      <p>十阶段开发计划全数落地：标题到存档的完整闭环，昼夜双循环驱动经营与战斗两套玩法，武器只能用捡来的零件拼装，跨族混搭还会打出副作用。48 个脚本、37 张场景、0 个已知 Bug，最终验收 39 文件全绿。</p>
+      <ul class="spot-list">
+        <li>白天摆摊 / 工作台拼装 / NPC 情报 / 图鉴 / 背包</li>
+        <li>夜晚四层横版地图，4 种搞笑怪物专属 AI 与死亡动画</li>
+        <li>JSON 全量存档，战斗收益跨昼夜保留</li>
+        <li>程序化合成 BGM 与音效，走路带脚步采样</li>
+      </ul>
+      <a class="btn btn-solid" href="#works" data-open="parts-hunter">查看工程卡</a>
+    </div>
+    <div class="spot-art">
+      <img src="assets/shot_hunter_walk.png" alt="猎魔人白天小镇实机截图" class="pixel">
+      <div class="spot-badge">DEMO 完全体</div>
+    </div>
+  </section>
+
+  <section id="arsenal" class="arsenal">
+    <div class="section-head">
+      <h2>工程军火库</h2>
+      <p>六个项目背后反复回收使用的弹药，不是玩具代码。</p>
+    </div>
+    <div class="arsenal-grid">
+      <div class="ammo"><h3>Autoload 单例架构</h3><p>GameSettings → Inventory → Save → DayNight，依赖单向，换项目直接拔插。</p></div>
+      <div class="ammo"><h3>JSON 数据驱动</h3><p>loot.json / weapon_meta.json 热改数值，策划不动代码就能调平衡。</p></div>
+      <div class="ammo"><h3>状态机管线</h3><p>godot_state_charts 驱动怪物与昼夜阶段，行为可视化不 spaghetti。</p></div>
+      <div class="ammo"><h3>批量导入流水线</h3><p>csv-data-importer + importality，贴图导入设置一键批处理。</p></div>
+      <div class="ammo"><h3>AI 结对开发</h3><p>godot-ai MCP 直连编辑器，场景、脚本、验证在一条 AI 回路里完成。</p></div>
+      <div class="ammo"><h3>GDShader 特效</h3><p>三层视差自动滚动城市、CRT 扫描线滤镜，纯着色器实现。</p></div>
+      <div class="ammo"><h3>像素主题系统</h3><p>StyleBoxFlat 自绘全局 Theme，一套皮肤盖住所有 UI。</p></div>
+      <div class="ammo"><h3>存档系统</h3><p>JSON 序列化背包 / 金币 / 图鉴 / 昼夜进度，读档全量复原。</p></div>
+    </div>
+  </section>
+
+  <section id="timeline" class="timeline">
+    <div class="section-head">
+      <h2>产线时间轴</h2>
+      <p>2026 年 9 月，三周，从数据内核到技能试验场。</p>
+    </div>
+    <ol class="track">
+      <li><time>09.12</time><p>背包二号机：ItemData / Slot / Inventory 三层内核</p></li>
+      <li><time>09.14</time><p>合成大西瓜字母版：物理堆叠 + 实时单词检测</p></li>
+      <li><time>09.18</time><p>零件猎魔人十阶段验收通过；Mountain Dusk 着色器城市上线</p></li>
+      <li><time>09.22</time><p>暗黑like 地牢爬行者推进中，主场景 dungeon.tscn</p></li>
+      <li><time>09.27</time><p>吸血鬼技能组测试场：数据驱动打击感管线，双套朝向 SpriteFrames</p></li>
+    </ol>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-card">
+      <div class="about-avatar" aria-hidden="true">MP</div>
+      <div>
+        <h2>关于工坊主</h2>
+        <p>一个人，一台编辑器，六台游戏机。熟悉 Godot 4.x 全栈：GDScript、TileMap、AnimationPlayer、CanvasLayer UI、着色器、音频总线、存档与数据驱动架构。信条是：Demo 必须能从头玩到尾，组件必须能被下个工程直接抄走。</p>
+        <div class="stack-chips">
+          <span>Godot 4.7</span><span>GDScript</span><span>Forward+</span><span>Jolt</span><span>GDShader</span><span>TileMapLayer</span><span>State Charts</span><span>JSON 数据驱动</span><span>像素美术管线</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>MIDNIGHT PIXEL WORKS · Built with Godot 4.7, 咖啡因与一点点偏执</p>
+  <p class="footer-sub">E:\GODOT project · 2026</p>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" id="modalPanel"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
