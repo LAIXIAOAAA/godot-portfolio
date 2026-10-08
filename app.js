@@ -32,7 +32,7 @@ const PROJECTS = [
       "9 组战斗音效覆盖每次挥刀",
     ],
     stats: ["26 GDScript", "18 场景", "进行中", "Forward Plus"],
-    cover: { type: "img", src: "assets/shot_dark.png" },
+    cover: { type: "img", src: "assets/dark_combo.gif" },
     shots: ["assets/shot_dark.png", "assets/shot_dark_arena.png", "assets/shot_dark_bag.png"],
     path: "E:\\GODOT project\\暗黑like",
   },
