@@ -77,7 +77,8 @@ const PROJECTS = [
       "投放预览与手感速度调校",
     ],
     stats: ["竖屏 720x1280", "物理消除", "3 GDScript", "独立词库"],
-    cover: { type: "img", src: "assets/shot_xigua.png" },
+    cover: { type: "img", src: "assets/xigua_combo.gif" },
+    shots: ["assets/shot_xigua_menu.png", "assets/shot_xigua_early.png", "assets/shot_xigua_mid.png", "assets/shot_xigua_tall.png", "assets/shot_xigua_final.png"],
     path: "E:\\GODOT project\\合成大西瓜",
   },
   {
